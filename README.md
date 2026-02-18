@@ -35,3 +35,13 @@ If you wish to fully validate the code by re-running the algorithms from scratch
 * **Result**: The code will execute both our method (`Our_EMCI`) and the baselines, evaluating their correctness and confidence interval lengths, and save the outputs as new `.json` files. 
 
 > **⚠️ Note**: Running all experiments from scratch for all datasets may take a significant amount of time. For quick verification, we highly recommend using Option 1 or 2 with the provided pre-computed `.json` files.
+
+## 📜 Credits & Acknowledgments
+
+* **Base Implementation**: Our implementation is built upon and extends the code provided by [Sun et al. (2023)](https://github.com/PrivateCI/DP_CI). [cite_start]We have modified the domain handling and fixed specific logic errors as detailed in the paper.
+* **Datasets**:
+  * **Banking Dataset**: Sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
+  * **Adult Dataset**: Sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/2/adult).
+  * **Airplane Dataset**: This dataset was sourced from Kaggle (original URL currently unavailable). It contains aircraft specifications, including model, capacity, and price. We specifically evaluate the capacity attribute, which ranges from 4 to 396 with a true median of 162.
+
+* **Documentation Note**: This README was refined with the assistance of large language models solely for improving language clarity and readability. The technical content, experimental logic, and codebase are the original work of the authors.
